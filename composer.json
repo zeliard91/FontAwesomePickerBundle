@@ -1,0 +1,29 @@
+{
+    "name": "redking/fontawesome-picker-bundle",
+    "description": "Font Awesome Picker for Symfony 2+",
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "homepage": "https://github.com/zeliard91/FontAwesomePickerBundle",
+    "keywords": [ "font awesome", "picker", "symfony", "bundle"],
+    "authors": [
+        {
+            "name": "Damien Matabon",
+            "email": "damien.matabon@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^5.6 || ^7.0",
+        "symfony/symfony": "^2.8 || ^3.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.4"
+    },
+    "autoload": {
+        "psr-4": { "Redking\\FontAwesomePickerBundle\\": "" }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "2.0.x-dev"
+        }
+    }
+}

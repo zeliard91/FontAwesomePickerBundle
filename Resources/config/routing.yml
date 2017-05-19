@@ -1,0 +1,3 @@
+redking_font_awesome_picker_homepage:
+    path:     /
+    defaults: { _controller: RedkingFontAwesomePickerBundle:Default:index }
