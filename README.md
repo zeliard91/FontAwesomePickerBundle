@@ -1,6 +1,8 @@
 FontAwesome Picker Bundle
 =========================
 
+[![Build Status](https://travis-ci.org/zeliard91/FontAwesomePickerBundle.svg?branch=master)](https://travis-ci.org/zeliard91/FontAwesomePickerBundle)
+
 Implementation of [FontAwesome Picker](https://github.com/itsjavi/fontawesome-iconpicker) Form Type for Symfony 2+
 
 
