@@ -19,7 +19,10 @@
         "phpunit/phpunit": "^5.4"
     },
     "autoload": {
-        "psr-4": { "Redking\\FontAwesomePickerBundle\\": "" }
+        "psr-4": { "Redking\\FontAwesomePickerBundle\\": "src/" }
+    },
+    "autoload-dev": {
+        "psr-4": { "Redking\\FontAwesomePickerBundle\\Tests\\": "tests/" }
     },
     "extra": {
         "branch-alias": {
