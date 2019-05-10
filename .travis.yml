@@ -2,22 +2,27 @@ language: php
 
 php:
   - 5.6
-  - 7.0
-  - 7.1
   - 7.2
+  - 7.3
 
 env: 
   - SYMFONY_VERSION=^2.8
-  - SYMFONY_VERSION=^3.0
+  - SYMFONY_VERSION=^3.4
+  - SYMFONY_VERSION=^4.2
 
 cache:
     directories:
         - $HOME/.composer/cache
 
+matrix:
+  exclude:
+    php: 5.6
+    env: SYMFONY_VERSION=^4.2
+
 before_install:
   - composer self-update
   - phpenv config-rm xdebug.ini || true
-  - composer require --no-update symfony/symfony:${SYMFONY_VERSION}
+  - composer require --no-update symfony/framework-bundle:${SYMFONY_VERSION} symfony/form:${SYMFONY_VERSION}
 
 install: composer update --prefer-dist
 
