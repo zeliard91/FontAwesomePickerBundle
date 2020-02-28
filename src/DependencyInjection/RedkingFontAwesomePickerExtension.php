@@ -12,7 +12,7 @@ use Symfony\Component\DependencyInjection\Loader;
 class RedkingFontAwesomePickerExtension extends Extension implements PrependExtensionInterface
 {
     /** @var string */
-    protected $formTemplate = 'RedkingFontAwesomePickerBundle:Form:fields.html.twig';
+    protected $formTemplate = '@RedkingFontAwesomePicker/Form/fields.html.twig';
 
     /**
      * {@inheritdoc}
