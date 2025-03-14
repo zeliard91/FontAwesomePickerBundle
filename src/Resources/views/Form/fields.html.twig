@@ -1,10 +1,8 @@
 {% block font_awesome_widget %}
-    {% apply spaceless %}
-        <div class="input-group">
-            {{ block('form_widget_simple') }}
-            <span class="input-group-addon"></span>
-        </div>
-    {% endapply %}
+    <div class="input-group">
+        {{ block('form_widget_simple') }}
+        <span class="input-group-addon"></span>
+    </div>
     <script type="text/javascript">
     $(document).ready(function(){
         $('#{{form.vars.id}}').iconpicker({{form.vars.picker_options|json_encode(constant('JSON_FORCE_OBJECT'))|raw}});
