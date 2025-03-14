@@ -15,7 +15,7 @@ class RedkingFontAwesomePickerExtension extends Extension implements PrependExte
     protected $formTemplate = '@RedkingFontAwesomePicker/Form/fields.html.twig';
 
     /**
-     * {@inheritdoc}
+     * @return void
      */
     public function load(array $configs, ContainerBuilder $container)
     {
@@ -32,7 +32,7 @@ class RedkingFontAwesomePickerExtension extends Extension implements PrependExte
     }
 
     /**
-     * {@inheritDoc}
+     * @return void
      */
     public function prepend(ContainerBuilder $container)
     {
